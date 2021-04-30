@@ -1,0 +1,26 @@
+@model ApiResponses;
+@{
+    ViewData["Title"] = "Система управления подписками";
+}
+
+<div class="text-center">
+
+    @if (Model.getShippingData.keyList == null)
+    {
+        <p>Ничего</p>
+        return;
+    }
+    <h1 class="display-4">Система управления подписками</h1>
+    @if (Model.getShippingData.embeddedKey == 0) {
+       <p>Настроен</p>
+       <p>@Model.getShippingData.keyList[0].value;</p>
+       <p> @Model.getShippingData.distrList[0].value;</p>
+       
+    } 
+    else {
+        <p>Не настроен</p>
+    }
+    
+
+    
+</div>

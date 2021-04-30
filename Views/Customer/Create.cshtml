@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .col1 {
+        width: 20%;
+    }
+</style>
+<div >
+    <h1>Создание заявки на регистрацию абонента</h1>
+    <form method="POST">
+        <div class="text-left">
+        <table class="table">
+            <tr>
+                <td class="col1">ФИО: </td>
+                <td><input type="text" name="Name" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Пол: </td>
+                <td><select name="Sex" class="form-control">
+                    <option value="Мужской">Мужской</option>
+                    <option value="Женский">Женский</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td>Дата и место рождения: </td>
+                <td><textarea type="text" name="Sex" class="form-control"></textarea></td>
+            </tr>
+            <tr>
+                <td>Адрес предоставления услуг: </td>
+                <td><textarea type="text" name="Sex" class="form-control"></textarea></td>
+            </tr>
+            <tr>
+                <td>Паспорт или заменяющий его документ: </td>
+                <td><textarea type="text" name="Sex" class="form-control"></textarea></td>
+            </tr>
+            <tr>
+                <td>Телефон: </td>
+                <td><input type="text" name="Sex" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Стоимость подключения: </td>
+                <td><input type="text" name="Sex" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Тариф: </td>
+                <td><input type="text" name="Sex" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Услуги: </td>
+                <td><input type="text" name="Sex" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Номер документа: </td>
+                <td><input type="text" name="Sex" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Дата создания документа: </td>
+                <td><input type="text" name="Sex" value="@DateTime.Now" class="form-control"></input></td>
+            </tr>
+        </table>
+</div>
+
+        <input type="submit">
+    </form>
+</div>
